@@ -10,7 +10,7 @@ DISCRETIZATION = 21
 # arg2 serial number
 
 # example
-# list=`find Images_from_rosbag/mydata/images | grep jpg | sort`; count=0; for i in $list; do python3 AnalysisImage.py $i $count; let count++; done > new.csv
+# list=`find Images_from_rosbag/mydata/images | grep jpg | sort`; count=0; for i in $list; do python3 analysis_image.py $i $count; let count++; done > new.csv
 
 def resize(img, rx, ry):
     h, w = img.shape[:2]           # get size of image
